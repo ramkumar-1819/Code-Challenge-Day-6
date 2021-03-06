@@ -9,6 +9,17 @@
 // Write the function to find the findDigit obtained.
 var findDigit = function(num, nth){
      //your code here
+    num=String(Math.abs(num));
+    if(nth<=0){
+      return -1;
+    }
+    if(num.length<nth){
+      return 0;
+    }
+    else{
+      val=num[num.length-(nth)];
+      return Number(val)
+    }
   }
 
 //Use SpecRunner to check the Test Cases.
